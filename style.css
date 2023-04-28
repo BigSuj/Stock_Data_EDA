@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+}
+
+#chart {
+    display: inline-block;
+    position: relative;
+}
+
+.axis-label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.line {
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+
+.x-axis path,
+.y-axis path,
+.y-axis line {
+    stroke: #888;
+    shape-rendering: crispEdges;
+}
+
+.x-axis text,
+.y-axis text {
+    fill: #555;
+    font-size: 12px;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    pointer-events: none;
+}
