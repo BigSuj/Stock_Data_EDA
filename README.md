@@ -17,4 +17,4 @@ You can install them via pip:
 pip install pandas numpy matplotlib seaborn plotly
 
 ### Dataset
-The dataset used in the notebook is historical stock data for the Dow Jones Index,
+The dataset used in the notebook is historical stock data for the Dow Jones Index.
