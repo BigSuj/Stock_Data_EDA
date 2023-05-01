@@ -40,3 +40,177 @@ body {
     font-size: 14px;
     pointer-events: none;
 }
+
+/* Main styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+  }
+  
+  .form-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-select {
+    font-size: 1.2rem;
+    background-color: #f8f9fa;
+    color: #333;
+    border: none;
+    border-radius: 0;
+    height: 3rem;
+  }
+  
+  .chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    height: 3rem;
+  }
+  
+  .chart-header-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .chart-header-unit {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .col-md-4 {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .form-label {
+      font-size: 1rem;
+    }
+  
+    .form-select {
+      font-size: 1rem;
+      height: 2rem;
+    }
+  
+    .chart-header {
+      font-size: 0.8rem;
+      height: 2.5rem;
+    }
+  
+   
+    .chart-header-text {
+        font-size: 1rem;
+    }
+    
+    .chart-header-unit {
+        font-size: 0.8rem;
+    }
+    
+    .tooltip {
+      position: absolute;
+      background-color: #333;
+      color: #fff;
+      padding: 0.5rem;
+      border-radius: 0.3rem;
+      pointer-events: none;
+      z-index: 9999;
+    }
+    
+    .line {
+      stroke-width: 2;
+      stroke-linecap: round;
+    }
+    
+    .marker {
+      stroke-width: 1;
+    }
+    
+    /* Colors */
+    .chart-header {
+      background-color: #f8f9fa;
+      border-bottom: 1px solid #dee2e6;
+    }
+    
+    .form-select,
+    .line {
+      stroke: #007bff;
+    }
+    
+    .marker {
+      fill: #007bff;
+      stroke: #007bff;
+    }
+    
+    .form-select:focus,
+    .line:hover,
+    .marker:hover {
+      stroke: #0056b3;
+    }
+    
+    .tooltip {
+      background-color: #343a40;
+    }
+    
+    /* Animation */
+    .line,
+    .marker {
+      transition: stroke 0.2s ease-in-out;
+    }
+    
+    .form-select,
+    .form-select:focus,
+    .line:hover,
+    .marker:hover {
+      transition: stroke 0.2s ease-in-out;
+    }
+    
+    /* Hover effects */
+    .form-select:hover,
+    .form-select:focus,
+    .line:hover,
+    .marker:hover {
+      cursor: pointer;
+    }
+    
+    .form-select:hover,
+    .form-select:focus {
+      background-color: #e9ecef;
+    }
+    
+    .line:hover,
+    .marker:hover {
+      stroke-width: 3;
+    }
+  }    
